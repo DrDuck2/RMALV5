@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "349036211484",
+    "firebase_url": "https://rmadb-5ac24-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "rmadb-5ac24",
+    "storage_bucket": "rmadb-5ac24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349036211484:android:030cd526e27ceeb3389ed9",
+        "android_client_info": {
+          "package_name": "com.example.rmalv4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2TNcnz6S1YJFzHKfRSHg-ODc1Lv9O3zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349036211484:android:a18bf09892a81cec389ed9",
+        "android_client_info": {
+          "package_name": "rma.lv1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2TNcnz6S1YJFzHKfRSHg-ODc1Lv9O3zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
