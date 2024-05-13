@@ -10,8 +10,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.rmalv4.view.BMICalculatorScreen
 import com.example.rmalv4.view.BackgroundImage
+import com.example.rmalv4.view.LoginRegisterScreen
 import com.example.rmalv4.view.StepCounterScreen
 import com.example.rmalv4.viewmodel.BMIViewModel
+import com.example.rmalv4.viewmodel.LoginRegisterViewModel
 import com.example.rmalv4.viewmodel.StepViewModel
 
 
@@ -23,7 +25,10 @@ class MainActivity : ComponentActivity() {
         stepViewModel = ViewModelProvider(this)[StepViewModel::class.java]
         setContent {
             val navController = rememberNavController()
-            NavHost(navController = navController, startDestination = "BMICalculatorScreen" ){
+            NavHost(navController = navController, startDestination = "LoginRegisterScreen" ){
+                composable("LoginRegisterScreen"){
+                    LoginRegisterScreen(navController, LoginRegisterViewModel())
+                }
                 composable("BMICalculatorScreen"){
                     BMICalculatorScreen(navController , BMIViewModel())
                 }
