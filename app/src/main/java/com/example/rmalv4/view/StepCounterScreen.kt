@@ -35,7 +35,6 @@ fun StepCounterScreen(navController: NavController, viewModel: StepViewModel){
         Text(
             text = stepCount.toString(),
             style = TextStyle(fontSize = 32.sp, fontWeight = FontWeight.Bold)
-
         )
     }
 

@@ -3,12 +3,11 @@ package com.example.rmalv4.view
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
 import androidx.compose.runtime.*
+import androidx.compose.ui.AbsoluteAlignment
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.rmalv4.viewmodel.BMIViewModel
@@ -64,7 +63,7 @@ fun BMICalculatorScreen(navController: NavController,viewModel: BMIViewModel){
         Spacer(modifier = Modifier.height(16.dp))
 
     }
-    Box(modifier = Modifier.fillMaxSize(),contentAlignment = Alignment.BottomEnd){
+    Box(modifier = Modifier.fillMaxSize(),contentAlignment = AbsoluteAlignment.BottomRight){
         Button(
             onClick = {
                 navController.navigate("StepCounterScreen")
@@ -73,6 +72,18 @@ fun BMICalculatorScreen(navController: NavController,viewModel: BMIViewModel){
                 .padding(16.dp)
         ){
             Text(text = "Step Counter")
+        }
+    }
+
+    Box(modifier = Modifier.fillMaxSize(),contentAlignment = AbsoluteAlignment.TopRight){
+        Button(
+            onClick = {
+                navController.navigate("WeatherScreen")
+            },
+            modifier = Modifier
+                .padding(16.dp)
+        ){
+            Text(text = "Weather")
         }
     }
 }
